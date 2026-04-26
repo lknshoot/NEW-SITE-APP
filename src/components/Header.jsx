@@ -11,11 +11,12 @@ export default function Header() {
       <div className="header-inner">
         <Link to="/" className="logo">
           <span className="logo-icon">◈</span>
-          <span className="logo-text">Maison Élite</span>
+          <span className="logo-text">Maison LILAK</span>
         </Link>
         <nav className="nav">
           <Link to="/" className="nav-link">Accueil</Link>
           <Link to="/products" className="nav-link">Boutique</Link>
+          <Link to="/admin" className="nav-link">Admin</Link>
         </nav>
         <button className="cart-btn" onClick={() => navigate('/cart')}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

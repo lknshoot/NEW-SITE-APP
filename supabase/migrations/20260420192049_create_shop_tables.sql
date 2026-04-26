@@ -1,5 +1,4 @@
-/*
-  # Create Online Shop Tables
+# Create Online Shop Tables
 
   ## Tables Created
 
@@ -38,7 +37,7 @@
   - RLS enabled on all tables
   - Public read access for products and categories
   - Public insert for orders and order_items (checkout flow)
-*/
+
 
 CREATE TABLE IF NOT EXISTS categories (
   id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -109,3 +108,7 @@ CREATE POLICY "Anyone can create order items"
 CREATE INDEX IF NOT EXISTS products_category_idx ON products(category_id);
 CREATE INDEX IF NOT EXISTS products_featured_idx ON products(featured);
 CREATE INDEX IF NOT EXISTS order_items_order_idx ON order_items(order_id);
+
+console.log(import.meta.env.VITE_SUPABASE_URL)
+
+

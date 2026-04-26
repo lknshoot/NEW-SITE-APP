@@ -7,6 +7,7 @@ import ProductDetail from './pages/ProductDetail'
 import Cart from './pages/Cart'
 import Checkout from './pages/Checkout'
 import OrderSuccess from './pages/OrderSuccess'
+import Admin from './pages/Admin'
 import './App.css'
 
 function App() {
@@ -22,14 +23,14 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/order-success" element={<OrderSuccess />} />
+            <Route path="/admin" element={<Admin />} />
           </Routes>
         </main>
         <footer className="footer">
-          <p>© 2026 Maison Élite — Tous droits réservés</p>
+          <p>© 2026 Maison LILAK — Tous droits réservés</p>
         </footer>
       </CartProvider>
     </BrowserRouter>
   )
 }
-
 export default App
